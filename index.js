@@ -28,10 +28,12 @@ function prependCat(name) {
 }
 
 function removeLastCat(name) {
-    const removeLastCat = [cats]
-    cats.slice(1)
+    const removeLastCat = cats.slice(0,2)
+    return removeLastCat
 }
 
+
 function removeFirstCat(name) {
-    cats.shift(`${name}`)
+    const removeFirstCat = cats.slice(1)
+    return removeFirstCat
 }
